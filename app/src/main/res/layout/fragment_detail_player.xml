@@ -15,28 +15,38 @@
         android:layout_gravity="center"
         android:scaleType="centerCrop"
         tools:src="@drawable/ic_person_24" />
+
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        tools:text="Book Title"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        tools:text="Player Name" />
+
     <TextView
         android:id="@+id/textViewAuthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        tools:text="Author"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        tools:text="Position" />
+
     <TextView
         android:id="@+id/textViewYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        tools:text="1999"
-        android:textSize="14sp"/>
+        android:textSize="14sp"
+        tools:text="Date of Birth" />
 
+    <TextView
+        android:id="@+id/textViewNationality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        tools:text="Nationality" />
 
 </LinearLayout>

@@ -9,12 +9,22 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.responsi1mobileh1d023103.adapter.PlayerAdapter
 import com.example.responsi1mobileh1d023103.databinding.ActivityPlayerBinding
+import com.example.responsi1mobileh1d023103.ui.fragment.DetailPlayerFragment
 import com.example.responsi1mobileh1d023103.viewmodel.PlayerViewModel
 
 class PlayerActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPlayerBinding
     private lateinit var viewModel: PlayerViewModel
-    private val adapter by lazy { PlayerAdapter {} }
+    private val adapter by lazy { PlayerAdapter { player ->
+        // Show bottomsheet with player data
+        val fragment = DetailPlayerFragment(
+            name = player.name,
+            position = player.position,
+            dateOfBirth = player.dateOfBirth,
+            nationality = player.nationality
+        )
+        fragment.show(supportFragmentManager, "DetailPlayerFragment")
+    } }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
