@@ -46,4 +46,4 @@ Aplikasi Android untuk menampilkan info klub Moreirense FC menggunakan API Footb
 
 ## Video Demo Aplikasi
 
-[Video Demo (Responsi103.mp4)](https://github.com/anas-shn/responsimobile-103/file/Responsi103.mp4)
+![Video Demo](https://github.com/anas-shn/responsimobile-103/blob/main/file/demo.gif)
