@@ -11,11 +11,6 @@ data class SearchResponse(
 )
 
 data class Coach(
-    @SerializedName("firstName")
-    val firstName: String,
-
-    @SerializedName("lastName")
-    val lastName: String,
 
     @SerializedName("name")
     val name: String,
